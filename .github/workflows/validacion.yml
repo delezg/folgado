@@ -17,3 +17,6 @@ jobs:
 
       - name: Para saber la hora
         run: date
+
+      - name: quiero saber si después de la instalación funciona la página
+        run: curl -k https://as.com
