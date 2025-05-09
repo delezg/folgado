@@ -10,7 +10,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Manuel se está durmiendo
-        uses: sleep 4
+        run: sleep 4
         
       - name: Mostrar contenido del inventario
         run: cat inventario.csv
