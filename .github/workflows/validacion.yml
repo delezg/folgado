@@ -1,0 +1,15 @@
+name: Validación del inventario
+
+on:[push]
+
+jobs:
+
+check-inventario:
+
+runs-on: windows-latest
+steps:
+-name: Checkout del repositorio
+uses: actions/checkout@v4
+
+-name: Mostrar contenido del inventario
+run: cat inventario.csv
